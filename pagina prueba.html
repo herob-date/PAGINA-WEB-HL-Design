@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HL Design | Muebles de Diseño en Lima - Perú</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts del Manual de Marca: Aoboshi One y Source Serif 4 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+    <!-- Iconos FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        hl: {
+                            cream: '#E4D1AC',
+                            sand: '#CEBFAB',
+                            wood: '#6B371D',
+                            dark: '#402E20',
+                            terracotta: '#C9745A',
+                            sage: '#ADB698',
+                            light: '#F7F3EB'
+                        }
+                    },
+                    fontFamily: {
+                        aoboshi: ['"Aoboshi One"', 'serif'],
+                        serifpro: ['"Source Serif 4"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Source Serif 4', serif;
+            background-color: #F7F3EB;
+            color: #402E20;
+        }
+        h1, h2, h3, .font-brand {
+            font-family: 'Aoboshi One', serif;
+        }
+        .hl-logo-box {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            line-height: 1;
+            user-select: none;
+        }
+        .hl-logo-letters {
+            font-family: 'Aoboshi One', serif;
+            font-size: 2.6rem;
+            letter-spacing: 0.12em;
+            color: #402E20;
+            font-weight: bold;
+        }
+        .hl-logo-band {
+            background-color: #F7F3EB;
+            padding: 1px 6px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 105%;
+            text-align: center;
+            font-family: 'Source Serif 4', serif;
+            font-size: 0.55rem;
+            letter-spacing: 0.42em;
+            color: #402E20;
+            font-weight: 600;
+            text-indent: 0.42em;
+        }
+        .hl-logo-dark .hl-logo-letters { color: #E4D1AC; }
+        .hl-logo-dark .hl-logo-band { background-color: #402E20; color: #E4D1AC; }
+    </style>
+</head>
+<body class="antialiased selection:bg-hl-terracotta selection:text-white">
+
+    <!-- Top Bar -->
+    <div class="bg-hl-dark text-hl-cream text-xs py-2.5 px-4 text-center tracking-widest uppercase font-semibold">
+        <span>✨ Somos Fabricantes | Acabados Personalizados | Envíos a todo el Perú ✨</span>
+    </div>
+
+    <!-- Header / Navegación -->
+    <header class="bg-[#F7F3EB]/95 backdrop-blur-md sticky top-0 z-40 border-b border-hl-sand/60">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="hl-logo-box" title="HL Design">
+                <span class="hl-logo-letters">HL</span>
+                <span class="hl-logo-band">DESIGN</span>
+            </a>
+
+            <nav class="hidden lg:flex space-x-6 text-sm font-semibold tracking-wide text-hl-dark">
+                <a href="#catalogo" class="hover:text-hl-terracotta transition">Catálogo</a>
+                <a href="#muestrario" class="hover:text-hl-terracotta transition">Tonos de Madera</a>
+                <a href="#asesoria" class="hover:text-hl-terracotta transition">A Medida</a>
+                <a href="#horeca" class="text-hl-wood font-bold hover:text-hl-terracotta transition">Restaurantes & Hoteles</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/51966327706?text=Hola%20HL%20Design,%20quisiera%20cotizar%20un%20mueble." target="_blank" class="bg-hl-dark hover:bg-hl-wood text-hl-cream text-xs md:text-sm px-5 py-2.5 rounded-sm font-semibold tracking-wider uppercase transition flex items-center gap-2 shadow-sm">
+                    <i class="fab fa-whatsapp text-base text-hl-sage"></i> Cotizar
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Principal -->
+    <section class="relative bg-hl-dark text-hl-cream overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 min-h-[70vh] items-center">
+            <div class="lg:col-span-6 px-6 py-16 lg:py-24 z-10">
+                <span class="inline-block bg-hl-sage/20 border border-hl-sage text-hl-sage text-xs uppercase tracking-widest px-3 py-1 mb-5 font-semibold">
+                    Mobiliario de Diseño para Interiores y Exteriores
+                </span>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl leading-tight mb-6 text-hl-cream">
+                    Elegancia y firmeza en cada detalle.
+                </h1>
+                <p class="text-hl-sand text-lg mb-8 leading-relaxed max-w-xl">
+                    Fabricación exclusiva en madera tornillo, huayruro, cachimbo, piedra sinterizada, mármol y telas impermeables. Personalizamos el tono de madera que prefieras.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#catalogo" class="bg-hl-terracotta hover:bg-[#b5634a] text-white px-8 py-3.5 text-sm uppercase tracking-widest font-semibold transition shadow-lg">
+                        Ver Catálogos
+                    </a>
+                    <a href="#muestrario" class="border border-hl-cream text-hl-cream hover:bg-hl-cream hover:text-hl-dark px-8 py-3.5 text-sm uppercase tracking-widest font-semibold transition">
+                        Ver Tonos de Madera
+                    </a>
+                </div>
+            </div>
+            <div class="lg:col-span-6 h-full min-h-[400px] relative">
+                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1400&q=85" alt="Muebles HL Design" class="w-full h-full object-cover opacity-90">
+                <div class="absolute inset-0 bg-gradient-to-r from-hl-dark via-hl-dark/40 to-transparent lg:block hidden"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN NUEVA: MUESTRARIO OFICIAL DE TONOS DE MADERA -->
+    <section id="muestrario" class="bg-hl-cream py-16 px-6 border-y border-hl-sand">
+        <div class="max-w-6xl mx-auto text-center">
+            <span class="text-hl-wood uppercase tracking-widest text-xs font-bold">Acabados Personalizables</span>
+            <h2 class="text-3xl md:text-4xl mt-2 mb-3 text-hl-dark">Muestrario Oficial de Tonos de Madera</h2>
+            <p class="text-hl-dark/80 text-sm md:text-base max-w-2xl mx-auto mb-8">
+                Elige entre nuestros 6 tonos estandarizados en tendencia o indícanos si deseas un acabado especial en otro color que combine perfectamente con tu espacio.
+            </p>
+            <div class="bg-white p-4 md:p-6 rounded shadow-lg border border-hl-sand inline-block max-w-4xl w-full">
+                <!-- Foto real del muestrario del usuario -->
+                <img src="https://i.postimg.cc/mD8F1f7G/WhatsApp-Image-2026-10-19-at-2-54-59-PM.jpg" alt="Muestrario de Tonos de Madera HL Design" class="w-full rounded shadow-sm cursor-pointer hover:opacity-95 transition" onclick="openLightbox(this.src)">
+                <p class="text-xs text-hl-wood mt-4 italic">💡 Haz clic sobre la imagen para ampliarla. ¿Tienes un tono específico en mente? Lo igualamos para tu proyecto.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catálogo Interactivo -->
+    <section id="catalogo" class="max-w-7xl mx-auto px-6 py-16">
+        <div class="text-center max-w-3xl mx-auto mb-10">
+            <span class="text-hl-terracotta uppercase tracking-widest text-xs font-bold">Catálogos Oficiales 2026-2027</span>
+            <h2 class="text-3xl md:text-4xl mt-2 mb-3 text-hl-dark">Explora Nuestros Modelos</h2>
+            <p class="text-hl-wood/90 text-sm md:text-base mb-6">
+                Haz clic en cualquier foto para ampliarla. Selecciona el tono de madera de tu preferencia antes de cotizar.
+            </p>
+
+            <!-- Buscador y Filtros -->
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-8">
+                <div class="relative w-full md:w-80">
+                    <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-hl-wood/60"><i class="fas fa-search"></i></span>
+                    <input type="text" id="search-input" oninput="filterSearch()" placeholder="Buscar modelo o nombre..." class="w-full bg-white border border-hl-sand text-hl-dark text-xs pl-10 pr-4 py-3 rounded-sm focus:outline-none focus:border-hl-wood shadow-sm">
+                </div>
+                <div class="flex gap-2 text-xs">
+                    <button onclick="filterMaterial('todos')" id="mat-todos" class="mat-btn bg-hl-dark text-hl-cream px-3.5 py-2.5 rounded-sm font-semibold transition">Todos</button>
+                    <button onclick="filterMaterial('madera')" id="mat-madera" class="mat-btn bg-white border border-hl-sand text-hl-dark px-3.5 py-2.5 rounded-sm font-semibold transition">Madera</button>
+                    <button onclick="filterMaterial('piedra')" id="mat-piedra" class="mat-btn bg-white border border-hl-sand text-hl-dark px-3.5 py-2.5 rounded-sm font-semibold transition">Piedra / Mármol</button>
+                    <button onclick="filterMaterial('metal')" id="mat-metal" class="mat-btn bg-white border border-hl-sand text-hl-dark px-3.5 py-2.5 rounded-sm font-semibold transition">Metal / Acero</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Botones de Categoría -->
+        <div class="flex flex-wrap justify-center gap-2 md:gap-3 mb-12" id="filter-buttons">
+            <button onclick="filterCategory('todos')" data-cat="todos" class="cat-btn active bg-hl-dark text-hl-cream px-5 py-2.5 text-xs uppercase tracking-wider font-semibold rounded-sm transition">Todos</button>
+            <button onclick="filterCategory('terrazas')" data-cat="terrazas" class="cat-btn bg-hl-cream/70 hover:bg-hl-sand text-hl-dark px-5 py-2.5 text-xs uppercase tracking-wider font-semibold rounded-sm transition">Terrazas</button>
+            <button onclick="filterCategory('comedores')" data-cat="comedores" class="cat-btn bg-hl-cream/70 hover:bg-hl-sand text-hl-dark px-5 py-2.5 text-xs uppercase tracking-wider font-semibold rounded-sm transition">Comedores</button>
+            <button onclick="filterCategory('mesas')" data-cat="mesas" class="cat-btn bg-hl-cream/70 hover:bg-hl-sand text-hl-dark px-5 py-2.5 text-xs uppercase tracking-wider font-semibold rounded-sm transition">Mesas de Centro</button>
+            <button onclick="filterCategory('consolas')" data-cat="consolas" class="cat-btn bg-hl-cream/70 hover:bg-hl-sand text-hl-dark px-5 py-2.5 text-xs uppercase tracking-wider font-semibold rounded-sm transition">Consolas</button>
+            <button onclick="filterCategory('butacas')" data-cat="butacas" class="cat-btn bg-hl-cream/70 hover:bg-hl-sand text-hl-dark px-5 py-2.5 text-xs uppercase tracking-wider font-semibold rounded-sm transition">Butacas</button>
+            <button onclick="filterCategory('bancos')" data-cat="bancos" class="cat-btn bg-hl-cream/70 hover:bg-hl-sand text-hl-dark px-5 py-2.5 text-xs uppercase tracking-wider font-semibold rounded-sm transition">Bancos Altos</button>
+        </div>
+
+        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Productos -->
+        </div>
+    </section>
+
+    <!-- Modal Lightbox -->
+    <div id="lightbox-modal" class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center p-4 cursor-pointer" onclick="closeLightbox()">
+        <div class="relative max-w-4xl max-h-[90vh]">
+            <button class="absolute -top-10 right-0 text-white text-3xl font-bold hover:text-hl-cream">&times;</button>
+            <img id="lightbox-img" src="" alt="Vista ampliada" class="max-w-full max-h-[85vh] object-contain rounded shadow-2xl">
+        </div>
+    </div>
+
+    <!-- Asesoría y Taller -->
+    <section id="asesoria" class="bg-hl-cream/40 py-16 px-6 border-t border-hl-sand">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="bg-hl-dark text-hl-cream text-xs uppercase tracking-widest px-3 py-1 font-semibold">Taller Propio en Villa El Salvador</span>
+                <h2 class="text-3xl md:text-4xl mt-4 mb-4 text-hl-dark">Fabricación personalizada y milimétrica</h2>
+                <p class="text-hl-dark/90 mb-6 leading-relaxed">
+                    Convertimos tu idea o referencia en realidad. Analizamos medidas, tipos de madera y el tono exacto de nuestro muestrario (o el color personalizado que prefieras) antes de iniciar la producción.
+                </p>
+                <a href="https://wa.me/51966327706?text=Hola%20HL%20Design,%20quisiera%20cotizar%20un%20mueble%20con%20un%20tono%20personalizado." target="_blank" class="inline-flex items-center gap-3 bg-hl-wood hover:bg-hl-dark text-hl-cream px-8 py-4 text-sm uppercase tracking-wider font-semibold transition shadow-md">
+                    <i class="fab fa-whatsapp text-xl"></i> Consultar por WhatsApp
+                </a>
+            </div>
+            <div class="bg-white p-6 rounded border border-hl-sand shadow-sm">
+                <h3 class="text-xl font-brand text-hl-dark mb-3"><i class="fas fa-map-marker-alt text-hl-terracotta mr-2"></i> Visítanos</h3>
+                <p class="text-xs text-hl-dark/80 mb-4">Conoce la calidad de nuestros acabados directamente en nuestro taller.</p>
+                <a href="https://maps.app.goo.gl/AUVotfUhsAXj9Nef7?g_st=ac" target="_blank" class="block w-full text-center bg-hl-dark hover:bg-hl-wood text-hl-cream text-xs uppercase tracking-widest py-3 rounded font-semibold transition">
+                    Abrir Ubicación en Google Maps
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-hl-dark text-hl-sand border-t border-hl-wood/40 pt-14 pb-8 px-6 text-sm">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+            <div>
+                <div class="hl-logo-box hl-logo-dark mb-4">
+                    <span class="hl-logo-letters">HL</span>
+                    <span class="hl-logo-band">DESIGN</span>
+                </div>
+                <p class="text-xs text-hl-sand/80 leading-relaxed">Mobiliario de diseño exclusivo para interiores, terrazas y proyectos comerciales en todo el Perú.</p>
+            </div>
+            <div>
+                <h4 class="font-brand text-hl-cream uppercase tracking-wider text-xs mb-4">Contacto</h4>
+                <p class="text-xs mb-2"><i class="fab fa-whatsapp text-hl-sage mr-2"></i> +51 966 327 706</p>
+                <p class="text-xs mb-2"><a href="https://maps.app.goo.gl/AUVotfUhsAXj9Nef7?g_st=ac" target="_blank" class="hover:text-hl-cream"><i class="fas fa-map-marker-alt text-hl-terracotta mr-2"></i> Ver Taller (Villa El Salvador)</a></p>
+            </div>
+            <div>
+                <h4 class="font-brand text-hl-cream uppercase tracking-wider text-xs mb-4">Redes Sociales</h4>
+                <div class="flex space-x-5 text-xl text-hl-cream">
+                    <a href="https://www.instagram.com/hldesign.lima?cplk=MmNwYTdobGFlc2Ro" target="_blank" class="hover:text-hl-terracotta transition"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/share/18aVbAkiax/" target="_blank" class="hover:text-hl-terracotta transition"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@hl.desing.lima?_r=1&_t=ZS-9AbyNsjuH72" target="_blank" class="hover:text-hl-terracotta transition"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-hl-wood/30 pt-6 text-center text-xs text-hl-sand/60">
+            © 2026 HL Design. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- Botón Flotante WhatsApp -->
+    <a href="https://wa.me/51966327706?text=Hola%20HL%20Design,%20estoy%20en%20su%20web%20y%20deseo%20cotizar." target="_blank" class="fixed bottom-6 right-6 bg-[#25D366] hover:bg-[#1ebe57] text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl z-50 transition transform hover:scale-105" title="Escribir al WhatsApp Business">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- SCRIPT -->
+    <script>
+        const WHATSAPP_NUMBER = "51966327706";
+
+        const products = [
+            {
+                id: "ter-cala", category: "terrazas", material: "madera", badge: "Colección 2027", title: "Colección Cala", subtitle: "Madera y Tela Lino Impermeable UV", desc: "Estructura en madera con tela lino impermeable, protección UV y alta resistencia.", img: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=80",
+                options: [{ label: "Juego 3/2/1", price: 5600 }, { label: "Juego 3/1/1", price: 4850 }, { label: "Sofá 3 Personas", price: 2950 }, { label: "Sofá 2 Personas", price: 2450 }, { label: "Sofá 1 Persona", price: 1550 }, { label: "Mesa de Centro", price: 1450 }]
+            },
+            {
+                id: "ter-santorini", category: "terrazas", material: "madera", badge: "Premium", title: "Colección Santorini", subtitle: "Diseño Orgánico y Confort", desc: "Sofás con apoyabrazos anchos de madera y cojinería completa en lino impermeable.", img: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=700&q=80",
+                options: [{ label: "Juego 3/2/1", price: 6800 }, { label: "Juego 3/1/1", price: 5900 }, { label: "Sofá 3 Personas", price: 3500 }, { label: "Sofá 2 Personas", price: 2450 }, { label: "Sofá 1 Persona", price: 1550 }, { label: "Mesa de Centro", price: 1650 }]
+            },
+            {
+                id: "ter-mikonos", category: "terrazas", material: "madera", badge: "Top Terrazas", title: "Colección Mikonos", subtitle: "Seccionales Modulares y Comedores", desc: "Módulos bajos contemporáneos ideales para terrazas amplias y casas de playa.", img: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=700&q=80",
+                options: [{ label: "Seccional A", price: 4950 }, { label: "Seccional B", price: 5500 }, { label: "Seccional C", price: 4150 }, { label: "Juego 3/2/1", price: 5850 }, { label: "Comedor 6 Personas", price: 6500 }, { label: "Comedor 8 Personas", price: 7400 }]
+            },
+            {
+                id: "com-2602", category: "comedores", material: "madera", badge: "Más Vendido", title: "Set de Comedor CODMS-2602", subtitle: "Mesa Circular con Pedestal Cónico", desc: "Elegante mesa redonda con base central de diseño y sillas ergonómicas tapizadas.", img: "https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&w=700&q=80",
+                options: [{ label: "Set para 4 Personas", price: 4950 }, { label: "Set para 6 Personas", price: 6200 }, { label: "Set para 8 Personas", price: 7400 }]
+            },
+            {
+                id: "com-2604", category: "comedores", material: "madera", badge: "Tendencia", title: "Set de Comedor CODMS-2604", subtitle: "Base Listonada + Sillas Bouclé", desc: "Mesa redonda con base de listones de madera y sillas con respaldar cilíndrico.", img: "https://images.unsplash.com/photo-1577140917170-285929fb55b7?auto=format&fit=crop&w=700&q=80",
+                options: [{ label: "Set para 4 Personas", price: 3900 }, { label: "Set para 6 Personas", price: 4950 }, { label: "Set para 8 Personas", price: 6100 }]
+            },
+            {
+                id: "com-2606", category: "comedores", material: "piedra", badge: "Lujo", title: "Set de Comedor CODMS-2606", subtitle: "Tablero Estilo Mármol y Base Geométrica", desc: "Diseño sofisticado con patas metálicas en negro y tablero resistente.", img: "https://images.unsplash.com/photo-1604578762246-41134e37f9cc?auto=format&fit=crop&w=700&q=80",
+                options: [{ label: "Set para 4 Personas", price: 5000 }, { label: "Set para 6 Personas", price: 6500 }, { label: "Set para 8 Personas", price: 7650 }]
+            },
+            {
+                id: "mc-mm61", category: "mesas", material: "madera", badge: "Destacado", title: "Mesa de Centro MM61 y MP60", subtitle: "Base Alistonada en Madera", desc: "Fabricadas en madera y enchape de madera nacional o importado en acabado satinado.", img: "https://images.unsplash.com/photo-1532372320572-cda25653a26d?auto=format&fit=crop&w=700&q=80",
+                options: [{ label: "Modelo MM61 Individual", price: 950 }, { label: "Modelo MP60 Dúo", price: 1500 }]
+            },
+            {
+                id: "mc-mfv74", category: "mesas", material: "piedra", badge: "Dúo Piedra", title: "Mesa Dúo MFV74 y MMF76", subtitle: "Piedra Sinterizada / Vidrio Bronce", desc: "Bases en metal pintado al horno y tableros exclusivos de alta durabilidad.", img: "https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?auto=format&fit=crop&w=700&q=80",
+                options: [{ label: "MMF76 Dúo Piedra Sinterizada", price: 950 }, { label: "MFV74 Dúo Vidrio Bronce", price: 1650 }]
+            },
+            {
+                id: "con-cc0125", category: "consolas", material: "madera", badge: "Recibidores", title: "Consola CC0125 y CC0126", subtitle: "Madera y Opciones en Mármol / Piedra", desc: "Recibidores elegantes en 3 medidas con opción de piedra sinterizada o mármol.", img: "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=700&q=80",
+                options: [{ label: "CC0125 - 100x30 cm", price: 1200 }, { label: "CC0125 - 125x30 cm", price: 1400 }, { label: "CC0125 - 150x30 cm", price: 1600 }, { label: "CC0126 Con Mármol - 100 cm", price: 1450 }, { label: "CC0126 Con Mármol - 125 cm", price: 1700 }]
+            },
+            {
+                id: "con-cc0130", category: "consolas", material: "metal", badge: "Metal & Madera", title: "Consolas Metálicas CC0130 a CC0135", subtitle: "Base en Acero al Horno y Cajones MDF", desc: "Diseño minimalista y moderno para entradas y salas de estar.", img: "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=700&q=80",
+                options: [{ label: "CC0130 Metal al Horno (120 cm)", price: 1650 }, { label: "CC0132 Con Cajones (120 cm)", price: 2100 }, { label: "CC0135 Lujo (120 cm)", price: 2300 }, { label: "CC0135 Lujo (160 cm)", price: 2650 }]
+            },
+            {
+                id: "but-bt01", category: "butacas", material: "madera", badge: "Confort", title: "Butacas BT01 al BT09", subtitle: "Espuma Zebra y Madera Tornillo / Cachimbo", desc: "Tapizadas en tela o cuero con gran variedad de colores en tendencia.", img: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=700&q=80",
+                options: [{ label: "COD-BT05", price: 850 }, { label: "COD-BT03", price: 950 }, { label: "COD-BT06 / BT09", price: 950 }, { label: "COD-BT07 / BT08", price: 1050 }, { label: "COD-BT02", price: 1150 }, { label: "COD-BT01 Base Dorada", price: 1250 }]
+            },
+            {
+                id: "ban-altos", category: "bancos", material: "madera", badge: "Catálogo 2027", title: "Bancos Altos de Barra", subtitle: "Fabricados a la medida de tu barra", desc: "Modelos Berlín, Oxa, Isma, Madrid, París, Milán y Sofía (Precio a partir de 3 unidades).", img: "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=700&q=80",
+                options: [{ label: "Modelo Berlín (C/u)", price: 290 }, { label: "Modelo Oxa (C/u)", price: 320 }, { label: "Modelo Isma (C/u)", price: 350 }, { label: "Modelo Madrid / Belén (C/u)", price: 390 }, { label: "Modelo París (C/u)", price: 420 }, { label: "Modelo Milán (C/u)", price: 460 }, { label: "Modelo Sofía Premium (C/u)", price: 850 }]
+            }
+        ];
+
+        let currentCategory = 'todos';
+        let currentMaterial = 'todos';
+        let searchQuery = '';
+
+        function renderProducts() {
+            const grid = document.getElementById('product-grid');
+            grid.innerHTML = '';
+
+            const filtered = products.filter(p => {
+                const matchCat = currentCategory === 'todos' || p.category === currentCategory;
+                const matchMat = currentMaterial === 'todos' || p.material === currentMaterial;
+                const matchSearch = p.title.toLowerCase().includes(searchQuery) || p.subtitle.toLowerCase().includes(searchQuery) || p.desc.toLowerCase().includes(searchQuery);
+                return matchCat && matchMat && matchSearch;
+            });
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `<div class="col-span-full text-center py-12 text-hl-wood">No se encontraron modelos con esos criterios.</div>`;
+                return;
+            }
+
+            filtered.forEach(prod => {
+                const defaultOption = prod.options[0];
+                const optionsHtml = prod.options.map((opt, i) => `<option value="${i}">${opt.label} — S/ ${opt.price.toLocaleString('es-PE')}</option>`).join('');
+
+                const card = document.createElement('div');
+                card.className = "bg-white border border-hl-sand/80 rounded-sm overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between";
+                card.innerHTML = `
+                    <div>
+                        <div class="h-64 bg-hl-cream/30 relative overflow-hidden group cursor-pointer" onclick="openLightbox('${prod.img}')">
+                            <img src="${prod.img}" alt="${prod.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <span class="absolute top-3 left-3 bg-hl-dark text-hl-cream text-[11px] uppercase tracking-wider px-3 py-1 font-semibold">${prod.badge}</span>
+                            <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-15 transition flex items-center justify-center">
+                                <span class="bg-white/90 text-hl-dark text-xs px-3 py-1 rounded shadow"><i class="fas fa-search-plus mr-1"></i> Ampliar</span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs text-hl-terracotta font-semibold uppercase tracking-wider">${prod.subtitle}</span>
+                            <h3 class="text-xl text-hl-dark mt-1 mb-2">${prod.title}</h3>
+                            <p class="text-xs text-hl-dark/80 mb-4 leading-relaxed">${prod.desc}</p>
+                            
+                            <!-- Selector de Tono del Muestrario -->
+                            <div class="mb-4">
+                                <label class="block text-[11px] uppercase tracking-wider text-hl-wood font-bold mb-1">Elige Tono de Madera:</label>
+                                <select id="tono-${prod.id}" class="w-full bg-[#F7F3EB] border border-hl-sand text-hl-dark text-xs p-2 rounded-sm focus:outline-none mb-2">
+                                    <option value="Tono 1">Tono 1 (Claro Natural)</option>
+                                    <option value="Tono 2">Tono 2 (Miel)</option>
+                                    <option value="Tono 3">Tono 3 (Nogal Medio)</option>
+                                    <option value="Tono 4">Tono 4 (Castaño Oscuro)</option>
+                                    <option value="Tono 5">Tono 5 (Wengue / Chocolate)</option>
+                                    <option value="Tono 6">Tono 6 (Negro Carbón)</option>
+                                    <option value="Otro Color Personalizado">✨ Otro Color Personalizado a medida</option>
+                                </select>
+                            </div>
+
+                            <label class="block text-[11px] uppercase tracking-wider text-hl-wood font-bold mb-1">Medida u Opción:</label>
+                            <select id="select-${prod.id}" onchange="updatePrice('${prod.id}')" class="w-full bg-[#F7F3EB] border border-hl-sand text-hl-dark text-xs p-2.5 rounded-sm focus:outline-none mb-4 font-semibold">
+                                ${optionsHtml}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-3 border-t border-hl-sand/40 flex items-center justify-between bg-[#F7F3EB]/50">
+                        <div>
+                            <span class="text-[10px] uppercase tracking-widest text-hl-wood block">Precio</span>
+                            <span id="price-${prod.id}" class="text-2xl font-brand text-hl-dark">S/ ${defaultOption.price.toLocaleString('es-PE')}</span>
+                        </div>
+                        <button onclick="sendWhatsApp('${prod.id}')" class="bg-hl-dark hover:bg-hl-wood text-hl-cream text-xs uppercase tracking-wider px-4 py-3 rounded-sm font-semibold transition flex items-center gap-2">
+                            <i class="fab fa-whatsapp text-sm text-hl-sage"></i> Pedir
+                        </button>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function updatePrice(prodId) {
+            const prod = products.find(p => p.id === prodId);
+            const selectEl = document.getElementById(`select-${prodId}`);
+            const priceEl = document.getElementById(`price-${prodId}`);
+            const selectedOpt = prod.options[selectEl.value];
+            priceEl.textContent = `S/ ${selectedOpt.price.toLocaleString('es-PE')}`;
+        }
+
+        function sendWhatsApp(prodId) {
+            const prod = products.find(p => p.id === prodId);
+            const selectEl = document.getElementById(`select-${prodId}`);
+            const tonoEl = document.getElementById(`tono-${prodId}`);
+            const selectedOpt = prod.options[selectEl.value];
+            const message = `Hola HL Design, deseo cotizar:\n\n• *Producto:* ${prod.title}\n• *Opción:* ${selectedOpt.label}\n• *Acabado:* ${tonoEl.value}\n• *Precio:* S/ ${selectedOpt.price.toLocaleString('es-PE')}\n\n¿Me pueden confirmar el tiempo de entrega?`;
+            window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, '_blank');
+        }
+
+        function filterCategory(cat) {
+            currentCategory = cat;
+            document.querySelectorAll('.cat-btn').forEach(btn => {
+                btn.className = btn.dataset.cat === cat ? "cat-btn active bg-hl-dark text-hl-cream px-5 py-2.5 text-xs uppercase tracking-wider font-semibold rounded-sm transition" : "cat-btn bg-hl-cream/70 hover:bg-hl-sand text-hl-dark px-5 py-2.5 text-xs uppercase tracking-wider font-semibold rounded-sm transition";
+            });
+            renderProducts();
+        }
+
+        function filterMaterial(mat) {
+            currentMaterial = mat;
+            ['todos', 'madera', 'piedra', 'metal'].forEach(m => {
+                const btn = document.getElementById(`mat-${m}`);
+                btn.className = m === mat ? "mat-btn bg-hl-dark text-hl-cream px-3.5 py-2.5 rounded-sm font-semibold transition" : "mat-btn bg-white border border-hl-sand text-hl-dark px-3.5 py-2.5 rounded-sm font-semibold transition";
+            });
+            renderProducts();
+        }
+
+        function filterSearch() {
+            searchQuery = document.getElementById('search-input').value.toLowerCase();
+            renderProducts();
+        }
+
+        function openLightbox(imgSrc) {
+            const modal = document.getElementById('lightbox-modal');
+            const modalImg = document.getElementById('lightbox-img');
+            modalImg.src = imgSrc;
+            modal.classList.remove('hidden');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox-modal').classList.add('hidden');
+        }
+
+        renderProducts();
+    </script>
+</body>
+</html>
